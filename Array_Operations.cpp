@@ -11,6 +11,9 @@ public:
     MyArray(int size) : size(size) {
         arr = new int[size];
     }
+    ~MyArray() {
+        delete[] arr;
+    }    
     void enter_array_elements(){
         for (int i = 0; i < size; i++)
         {
@@ -22,6 +25,7 @@ public:
     void display();
     void Insertion(int element, int index);
     void Deletion(int index);
+    int search(int element);
 };
 
 void MyArray::display() {
@@ -51,6 +55,18 @@ void MyArray::Deletion(int index) {
     cout<<"Size of Array Reduced !"<<endl;
 }
 
+int MyArray::search(int element){
+    for (int i = 0; i < size; i++)
+    {
+        if(arr[i]==element){
+            cout<<"Element Found at Index : "<<i<<endl;
+            return 1;
+        }
+    }
+    return 0;
+    
+}
+
 int main() {
 
     int size;
@@ -64,7 +80,7 @@ int main() {
     arr.enter_array_elements();
     
     do {
-        cout << "Menu:\n1. Display Array\n2. Insert Element\n3. Delete Element\n4. Exit\n";
+        cout << "Menu:\n1. Display Array\n2. Insert Element\n3. Delete Element\n4. Search Element\n5. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
                 
@@ -96,13 +112,19 @@ int main() {
                 arr.display();
                 break;
             case 4:
+                cout<<"Enter the element to search : ";
+                cin>>element;
+                if (arr.search(element) == 0) {
+                    cout << "Element Not Found" << endl;
+                }
+            case 5:
                 cout << "Exiting program.\n";
                 break;
             default:
                 cout << "Invalid choice. Please try again.\n";
         }
 
-    } while (choice != 4);
+    } while (choice != 5);
 
     return 0;
 }
