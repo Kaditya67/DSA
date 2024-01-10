@@ -28,6 +28,7 @@ public:
     void push(int element);
     void pop();
     void display();
+    void peek(int p);
 };
 
 void Stack::push(int element) {
@@ -57,12 +58,22 @@ void Stack::display() {
     }
 }
 
+void Stack:: peek(int p){
+    int i=top-p+1;
+    if(p<top+1){
+        cout<<"Element is : "<<arr[i]<<endl;
+    }
+    else{
+        cout<<"Out of Bound"<<endl;
+    }
+}
+
 int main() {
     int choice, element;
     Stack stack(5);
 
     do {
-        cout << "1. Push\n2. Pop\n3. Display\n4. Exit\n";
+        cout << "1. Push\n2. Pop\n3. Peek\n4. Display\n4. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -76,15 +87,21 @@ int main() {
                 stack.pop();
                 break;
             case 3:
-                stack.display();
+                int position;
+                cout<<"Enter the position to peek : ";
+                cin>>position;
+                stack.peek(position);
                 break;
             case 4:
+                stack.display();
+                break;
+            case 5:
                 cout << "Exiting program." << endl;
                 break;
             default:
                 cout << "Invalid choice. Try again." << endl;
         }
-    } while (choice != 4);
+    } while (choice != 5);
 
     return 0;
 }
