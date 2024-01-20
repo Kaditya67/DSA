@@ -6,10 +6,24 @@ public:
     Node* next;
 };
 
-Node* f = nullptr;
-Node* r = nullptr;
+class Queue{
+    public:
+    // Moving pointers
+    Node* f;
+    Node* r;
+    Queue(){
+        r=nullptr;
+        f=nullptr;
+    }
+    // Functions
+    void linkedListTraversal();
+    void enqueue(int val);
+    int dequeue();
+};
 
-void linkedListTraversal(Node* ptr) {
+
+void Queue :: linkedListTraversal() {
+    Node *ptr=f;
     std::cout << "Printing the elements of this linked list" << std::endl;
     while (ptr != nullptr) {
         std::cout << "Element: " << ptr->data << std::endl;
@@ -17,8 +31,8 @@ void linkedListTraversal(Node* ptr) {
     }
 }
 
-// SImilar to : Inserting to the end in LinkedList
-void enqueue(int val) {
+// Similar to : Inserting to the end in LinkedList
+void Queue::enqueue(int val) {
     Node* n = new Node();
     if (n == nullptr) {
         std::cout << "Queue is Full" << std::endl;
@@ -35,7 +49,7 @@ void enqueue(int val) {
 }
 
 // Similar to : Deleting head node in the Linked List
-int dequeue() {
+int Queue :: dequeue() {
     int val = -1;
     Node* ptr = f;
     if (f == nullptr) {
@@ -50,6 +64,7 @@ int dequeue() {
 
 int main() {
     int choice, element;
+    Queue q;
 
     do {
         std::cout << "\nMenu:\n";
@@ -65,13 +80,13 @@ int main() {
             case 1:
                 std::cout << "Enter the element to enqueue: ";
                 std::cin >> element;
-                enqueue(element);
+                q.enqueue(element);
                 break;
             case 2:
-                std::cout << "Dequeuing element " << dequeue() << std::endl;
+                std::cout << "Dequeuing element " << q.dequeue() << std::endl;
                 break;
             case 3:
-                linkedListTraversal(f);
+                q.linkedListTraversal();
                 break;
             case 4:
                 std::cout << "Exiting the program." << std::endl;
