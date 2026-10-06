@@ -282,36 +282,23 @@ DSA/
 
 ---
 
-## 📝 Problem Folder README Template
+## 🚀 How to Use This Repository
 
-Inside each `problems/<problem-name>/README.md`:
+### 1. Conceptual Preparation
+- Open the respective topic and pattern folder (e.g., `01-array/two-pointer/`).
+- Review the pattern's `README.md` to understand:
+  - **Intuition**: Why the pattern exists and when it outperforms brute force.
+  - **Triggers**: Keywords and structural constraints that suggest the pattern.
+  - **Standard Boilerplate**: Common coding templates.
 
-```markdown
-# [Problem Title / LeetCode #]
+### 2. Multi-Language & Multi-Pattern Practice
+- In `problems/<problem-name>/`, examine the problem description and break down possible solution strategies.
+- Solve and document multiple approaches (e.g., *Brute Force*, *Optimal Pattern*, *Alternative Data Structure*).
+- Implement solutions across all three target languages:
+  - **C++**: Focus on pointers, references, iterators, and STL containers (`std::vector`, `std::unordered_map`).
+  - **Java**: Focus on object-oriented idiomatic structures, collections framework, and edge cases.
+  - **Python**: Focus on clean, idiomatic algorithms, slicing, list comprehensions, and built-ins (`collections`, `heapq`).
 
-## 📌 Problem Description
-[Link to problem description or concise statement]
-
-## 💡 Approaches & Complexity Analysis
-
-### Approach 1: <Name, e.g., Two Pointer (Optimal)>
-- **Intuition:** Why this approach works.
-- **Time Complexity:** $O(...)$
-- **Space Complexity:** $O(...)$
-- **Code:**
-  - C++: [`cpp/approach1-two-pointer.cpp`](./cpp/approach1-two-pointer.cpp)
-  - Java: [`java/Approach1TwoPointer.java`](./java/Approach1TwoPointer.java)
-  - Python: [`python/approach1_two_pointer.py`](./python/approach1_two_pointer.py)
-
-### Approach 2: <Alternative / Different Pattern, e.g., Binary Search>
-- **Intuition:** How this problem maps to another pattern.
-- **Time Complexity:** $O(...)$
-- **Space Complexity:** $O(...)$
-- **Code:**
-  - C++: [`cpp/approach2-binary-search.cpp`](./cpp/approach2-binary-search.cpp)
-  - Java: [`java/Approach2BinarySearch.java`](./java/Approach2BinarySearch.java)
-  - Python: [`python/approach2_binary_search.py`](./python/approach2_binary_search.py)
-
-## ⚠️ Edge Cases & Key Takeaways
-- Duplicates, empty/single-element inputs, negative values, large bounds.
-```
+### 3. Review & Retain
+- Summarize the **time & space complexities** ($O(\dots)$) for each approach.
+- Document any tricky edge cases (e.g., integer overflows, single-element arrays, cycles, empty collections) to make future revisions quick and effective.
