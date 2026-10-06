@@ -7,10 +7,10 @@ When you start solving array problems:
 - Then run an inner loop for `j`
 
 > [!CAUTION]
-> For an array of size $N$, checking all pairs takes $\color{red}{O(N^2)}$ operations.  
-> If $N = 10^5$, then $N^2 = 10^{10}$ operations, which hits **Time Limit Exceeded (TLE)** on any online judge within 1 second!
+> For an array of size `N`, checking all pairs takes **O(N^2)** operations.  
+> If `N = 10^5`, then `N^2 = 10^10` operations, which hits **Time Limit Exceeded (TLE)** on any online judge within 1 second!
 
-The Two-Pointer technique drops this down to $\color{green}{O(N)}$. How? Let's break it down.
+The Two-Pointer technique drops this down to **O(N)**. How? Let's break it down.
 
 ---
 
@@ -19,8 +19,8 @@ The Two-Pointer technique drops this down to $\color{green}{O(N)}$. How? Let's b
 You cannot just throw two pointers at any random problem. It works **only** when the problem gives you a monotonic property:
 - Moving a pointer in one direction strictly increases or decreases the value you are tracking.
 - If the array is sorted:
-  - Moving `left` to the right $\to$ increases values.
-  - Moving `right` to the left $\to$ decreases values.
+  - Moving `left` to the right -> increases values.
+  - Moving `right` to the left -> decreases values.
 
 > [!IMPORTANT]
 > **In short:** The array must be sorted, or capable of being sorted!  
@@ -36,9 +36,9 @@ You place one pointer at the start (`left = 0`) and one at the end (`right = n -
 
 #### Mental Model
 Think of a balance scale:
-- If current sum is too small $\to$ you need bigger numbers. The only way is `left++`.
-- If current sum is too large $\to$ you need smaller numbers. The only way is `right--`.
-- If it matches your target $\to$ you found the answer!
+- If current sum is too small -> you need bigger numbers. The only way is `left++`.
+- If current sum is too large -> you need smaller numbers. The only way is `right--`.
+- If it matches your target -> you found the answer!
 
 #### Basic Skeleton
 ```cpp
@@ -132,11 +132,11 @@ while (mid <= high) {
 ## How to Recognize Two-Pointer in an Interview
 
 1. **Look at constraints:**  
-   If $N \le 10^5$, an $\color{red}{O(N^2)}$ solution will fail. You need $\color{green}{O(N)}$ or $\color{blue}{O(N \log N)}$.
+   If `N <= 10^5`, an **O(N^2)** solution will fail. You need **O(N)** or **O(N log N)**.
 2. **Look at the data:**  
    Is the array sorted? Or can you sort it without breaking required indices?
 3. **Look at the problem ask:**  
-   Is it asking for pairs, triplets, reversals, partitions, or in-place modification with $\color{blue}{O(1)}$ extra space?
+   Is it asking for pairs, triplets, reversals, partitions, or in-place modification with **O(1)** extra space?
 
 ---
 
