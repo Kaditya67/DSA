@@ -29,24 +29,36 @@ A structured reference guide covering **17 Data Structures & Algorithms modules*
 
 ---
 
-## 📁 Repository Organization
+## 📁 Repository & Folder Architecture
+
+Each topic contains pattern folders. Each pattern folder has:
+1. `README.md`: Concept theory, trigger signals, common templates, and time/space intuition.
+2. `problems/`: Problem subdirectories containing problem description, intuition, and tri-language solutions (`cpp/`, `java/`, `python/`) with multiple approaches (e.g., brute force, optimal, alternative pattern).
 
 ```text
 DSA/
-├── Readme.md                          # Global curriculum & pattern index
+├── Readme.md                                      # Global curriculum & pattern index
 ├── 01-array/
-│   ├── two-pointer/                   # Notes & problem solutions
+│   ├── two-pointer/
+│   │   ├── README.md                              # Concept theory, templates & signals
+│   │   └── problems/
+│   │       ├── 01-two-sum-ii/
+│   │       │   ├── README.md                      # Problem statement, intuition & analysis
+│   │       │   ├── cpp/
+│   │       │   │   ├── approach1-two-pointer.cpp
+│   │       │   │   └── approach2-binary-search.cpp
+│   │       │   ├── java/
+│   │       │   │   ├── Approach1TwoPointer.java
+│   │       │   │   └── Approach2BinarySearch.java
+│   │       │   └── python/
+│   │       │       ├── approach1_two_pointer.py
+│   │       │       └── approach2_binary_search.py
+│   │       └── 02-3sum/
 │   ├── sliding-window/
 │   ├── prefix-sum/
 │   └── kadanes-algorithm/
 ├── 02-strings/
-│   ├── two-pointer-palindrome/
-│   └── sliding-window-string/
 ├── 03-binary-search/
-│   ├── classic-binary-search/
-│   ├── lower-upper-bound/
-│   ├── binary-search-on-answers/
-│   └── search-in-2d-matrix/
 ├── 04-stack/
 ├── 05-queue/
 ├── 06-recursion/
@@ -61,7 +73,7 @@ DSA/
 ├── 15-dynamic-programming/
 ├── 16-trie/
 ├── 17-bit-manipulation/
-└── templates/                         # Pattern boilerplates & reusable templates
+└── templates/                                     # Global reference boilerplates
 ```
 
 ---
@@ -270,15 +282,36 @@ DSA/
 
 ---
 
-## 📝 Problem Log Template
+## 📝 Problem Folder README Template
+
+Inside each `problems/<problem-name>/README.md`:
 
 ```markdown
-### [Problem Name / LeetCode #]
-- **Pattern:** <e.g., Two Pointers / Monotonic Stack / Sliding Window>
-- **Difficulty:** Easy / Medium / Hard
-- **Core Intuition:** (The key insight — why this pattern works here)
+# [Problem Title / LeetCode #]
+
+## 📌 Problem Description
+[Link to problem description or concise statement]
+
+## 💡 Approaches & Complexity Analysis
+
+### Approach 1: <Name, e.g., Two Pointer (Optimal)>
+- **Intuition:** Why this approach works.
 - **Time Complexity:** $O(...)$
 - **Space Complexity:** $O(...)$
-- **Edge Cases:** Single element, duplicates, negatives, empty input.
-- **Solution File:** [solution.py](./solutions/problem.py)
+- **Code:**
+  - C++: [`cpp/approach1-two-pointer.cpp`](./cpp/approach1-two-pointer.cpp)
+  - Java: [`java/Approach1TwoPointer.java`](./java/Approach1TwoPointer.java)
+  - Python: [`python/approach1_two_pointer.py`](./python/approach1_two_pointer.py)
+
+### Approach 2: <Alternative / Different Pattern, e.g., Binary Search>
+- **Intuition:** How this problem maps to another pattern.
+- **Time Complexity:** $O(...)$
+- **Space Complexity:** $O(...)$
+- **Code:**
+  - C++: [`cpp/approach2-binary-search.cpp`](./cpp/approach2-binary-search.cpp)
+  - Java: [`java/Approach2BinarySearch.java`](./java/Approach2BinarySearch.java)
+  - Python: [`python/approach2_binary_search.py`](./python/approach2_binary_search.py)
+
+## ⚠️ Edge Cases & Key Takeaways
+- Duplicates, empty/single-element inputs, negative values, large bounds.
 ```
