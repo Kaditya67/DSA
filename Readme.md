@@ -35,7 +35,7 @@ Curriculum and index covering 17 Data Structures & Algorithms modules, structure
 DSA/
 ├── Readme.md
 ├── 01-array/
-│   ├── two-pointer/
+│   ├── 01-two-pointer/
 │   │   ├── README.md
 │   │   └── problems/
 │   │       ├── 01-two-sum-ii/
@@ -44,9 +44,9 @@ DSA/
 │   │       │   ├── java/
 │   │       │   └── python/
 │   │       └── 02-3sum/
-│   ├── sliding-window/
-│   ├── prefix-sum/
-│   └── kadanes-algorithm/
+│   ├── 02-sliding-window/
+│   ├── 03-prefix-sum/
+│   └── 04-kadanes-algorithm/
 ├── 02-strings/
 ├── 03-binary-search/
 ├── 04-stack/

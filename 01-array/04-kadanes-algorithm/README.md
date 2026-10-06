@@ -120,3 +120,4 @@ int max_so_far = 0;
 ```
 If all elements in the array are negative, the answer is the largest single negative number (e.g. `-2`).
 **Always** initialize `current_sum = nums[0]` and `max_so_far = nums[0]`.
+

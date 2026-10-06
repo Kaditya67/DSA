@@ -123,3 +123,4 @@ If `0` was not in the map with count 1, you wouldn't count the subarray `[3]` it
 1. Any problem asking about repeated range queries ($L$ to $R$).
 2. Any problem asking about continuous subarrays summing to $K$, multiple of $K$, or equal distribution of two elements.
 3. Any problem where the array contains **negative numbers**, eliminating the possibility of standard Sliding Window.
+

@@ -124,3 +124,4 @@ while (mid <= high) {
 1. **Loop Termination**: Know whether your condition is `while (left < right)` or `while (left <= right)`. For pair problems, two pointers pointing to the exact same index (`left == right`) means you are using the same element twice. Usually you want `left < right`.
 2. **Handling Duplicates**: In problems like 3Sum, after finding a match, you must skip duplicate values for both `left` and `right`, otherwise you end up with duplicate triplets in your result.
 3. **Unsorted Arrays Where Indices Matter**: If the question asks for 1-based original indices of the unsorted array and you sort the array, you lose those indices unless you store `(value, original_index)` pairs. In that case, a HashMap might be the simpler choice over Two-Pointer.
+
