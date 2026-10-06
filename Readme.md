@@ -1,10 +1,10 @@
-# 🧩 DSA Mastery — Pattern Sheet Roadmap
+# DSA Pattern Sheet
 
-A structured reference guide covering **17 Data Structures & Algorithms modules**, organized into distinct problem-solving patterns with intuition cues, trigger signals, and problem counts.
+Curriculum and index covering 17 Data Structures & Algorithms modules, structured into problem-solving patterns with trigger signals and problem counts.
 
 ---
 
-## 📊 Modules & Pattern Overview
+## Overview
 
 | # | Topic | Sub-Patterns | Total Problems |
 |:---:|:---|:---:|:---:|
@@ -29,30 +29,20 @@ A structured reference guide covering **17 Data Structures & Algorithms modules*
 
 ---
 
-## 📁 Repository & Folder Architecture
-
-Each topic contains pattern folders. Each pattern folder has:
-1. `README.md`: Concept theory, trigger signals, common templates, and time/space intuition.
-2. `problems/`: Problem subdirectories containing problem description, intuition, and tri-language solutions (`cpp/`, `java/`, `python/`) with multiple approaches (e.g., brute force, optimal, alternative pattern).
+## Directory Structure
 
 ```text
 DSA/
-├── Readme.md                                      # Global curriculum & pattern index
+├── Readme.md
 ├── 01-array/
 │   ├── two-pointer/
-│   │   ├── README.md                              # Concept theory, templates & signals
+│   │   ├── README.md
 │   │   └── problems/
 │   │       ├── 01-two-sum-ii/
-│   │       │   ├── README.md                      # Problem statement, intuition & analysis
+│   │       │   ├── README.md
 │   │       │   ├── cpp/
-│   │       │   │   ├── approach1-two-pointer.cpp
-│   │       │   │   └── approach2-binary-search.cpp
 │   │       │   ├── java/
-│   │       │   │   ├── Approach1TwoPointer.java
-│   │       │   │   └── Approach2BinarySearch.java
 │   │       │   └── python/
-│   │       │       ├── approach1_two_pointer.py
-│   │       │       └── approach2_binary_search.py
 │   │       └── 02-3sum/
 │   ├── sliding-window/
 │   ├── prefix-sum/
@@ -73,232 +63,209 @@ DSA/
 ├── 15-dynamic-programming/
 ├── 16-trie/
 ├── 17-bit-manipulation/
-└── templates/                                     # Global reference boilerplates
+└── templates/
 ```
 
 ---
 
 ## 1. Array
-> *Fundamental collection of elements stored at contiguous memory locations.* (24 problems)
+Collection of elements stored at contiguous memory locations. (24 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Two-Pointer** | Pairs, sorted arrays, triplets, opposite-end or fast-slow traversal | 6 |
-| **Sliding Window** | Subarray of size $k$, longest/shortest contiguous subarray, at most $K$ | 8 |
-| **Prefix Sum** | Range sum queries, subarray sum equals $K$, cumulative sums | 6 |
-| **Kadane’s Algorithm** | Maximum/minimum contiguous subarray sum or product | 4 |
+| Two-Pointer | Pairs, sorted arrays, triplets, opposite-end or fast-slow traversal | 6 |
+| Sliding Window | Subarray of size k, longest/shortest contiguous subarray, at most K | 8 |
+| Prefix Sum | Range sum queries, subarray sum equals K, cumulative sums | 6 |
+| Kadane’s Algorithm | Maximum/minimum contiguous subarray sum or product | 4 |
 
 ---
 
 ## 2. Strings
-> *Sequence of characters and common string manipulation patterns.* (11 problems)
+Sequence of characters and common string manipulation patterns. (11 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Two-Pointer (Palindrome)** | Palindrome verification, symmetric comparisons, reverse from both ends | 5 |
-| **Sliding Window (String)** | Longest/shortest substring without repeat, at most $K$ distinct characters | 6 |
+| Two-Pointer (Palindrome) | Palindrome verification, symmetric comparisons, reverse from both ends | 5 |
+| Sliding Window (String) | Longest/shortest substring without repeat, at most K distinct characters | 6 |
 
 ---
 
 ## 3. Binary Search
-> *Efficient logarithmic search algorithm dividing the search interval in half.* (23 problems)
+Logarithmic search algorithm dividing the search interval in half. (23 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Classic Binary Search** | Sorted array, finding target element in $O(\log N)$ | 6 |
-| **Lower / Upper Bound** | First/last occurrence, floor/ceil, index boundary constraints | 5 |
-| **Binary Search on Answers** | Minimum/maximum feasible value, allocation problems, monotonic predicate | 8 |
-| **Search in 2D Matrix** | Row-wise & column-wise sorted matrix, $k$-th smallest element in matrix | 4 |
+| Classic Binary Search | Sorted array, finding target element in O(log N) | 6 |
+| Lower / Upper Bound | First/last occurrence, floor/ceil, index boundary constraints | 5 |
+| Binary Search on Answers | Minimum/maximum feasible value, allocation problems, monotonic predicate | 8 |
+| Search in 2D Matrix | Row-wise and column-wise sorted matrix, k-th smallest element in matrix | 4 |
 
 ---
 
 ## 4. Stack
-> *LIFO (Last In First Out) data structure patterns.* (32 problems)
+LIFO (Last In First Out) data structure patterns. (32 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Monotonic Stack** | Next/previous greater/smaller element, stock span, largest rectangle in histogram | 7 |
-| **Expression Evaluation** | Infix/postfix/prefix evaluation, decode strings, basic calculator | 4 |
-| **Stack Simulation / Undo** | Backspace compare, remove adjacent duplicates, simulation | 4 |
-| **Parenthesis & Scoring** | Valid parentheses, minimum additions to balance, score of parentheses | 4 |
-| **Stack-Based Design** | Min Stack, Max Stack, implement Queue using Stacks | 5 |
-| **Stack + Greedy** | Remove $K$ digits, smallest subsequence of distinct characters | 5 |
-| **Recursive Stack** | Reverse stack using recursion, sort stack recursively | 3 |
+| Monotonic Stack | Next/previous greater/smaller element, stock span, largest rectangle in histogram | 7 |
+| Expression Evaluation | Infix/postfix/prefix evaluation, decode strings, basic calculator | 4 |
+| Stack Simulation / Undo | Backspace compare, remove adjacent duplicates, simulation | 4 |
+| Parenthesis & Scoring | Valid parentheses, minimum additions to balance, score of parentheses | 4 |
+| Stack-Based Design | Min Stack, Max Stack, implement Queue using Stacks | 5 |
+| Stack + Greedy | Remove K digits, smallest subsequence of distinct characters | 5 |
+| Recursive Stack | Reverse stack using recursion, sort stack recursively | 3 |
 
 ---
 
 ## 5. Queue
-> *FIFO (First In First Out) sequential processing.* (6 problems)
+FIFO (First In First Out) sequential processing patterns. (6 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Queue & Circular Queue** | Implement circular queue/deque, wrap-around buffer management | 3 |
-| **Queue Simulation / FIFO** | Arrival order processing, circular potato/Josephus game, task scheduling | 3 |
+| Queue & Circular Queue | Implement circular queue/deque, wrap-around buffer management | 3 |
+| Queue Simulation / FIFO | Arrival order processing, circular potato/Josephus game, task scheduling | 3 |
 
 ---
 
 ## 6. Recursion
-> *Breaking down problems into smaller, self-similar subproblems.* (20 problems)
+Breaking problems down into smaller, self-similar subproblems. (20 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Linear Recursion** | Single linear branching, base case reduction | 4 |
-| **Non-Linear Recursion** | Multiple branch recursion, tree of choices, grid paths | 4 |
-| **Divide & Conquer** | Merge sort, quick sort, search in structured sub-halves | 5 |
-| **Recursion on LinkedList/Stack** | Reverse list recursively, recursive stack operations | 4 |
-| **Subsequences** | Include / exclude choices, generate power set, target sum subsets | 3 |
+| Linear Recursion | Single linear branching, base case reduction | 4 |
+| Non-Linear Recursion | Multiple branch recursion, tree of choices, grid paths | 4 |
+| Divide & Conquer | Merge sort, quick sort, search in structured sub-halves | 5 |
+| Recursion on LinkedList/Stack | Reverse list recursively, recursive stack operations | 4 |
+| Subsequences | Include/exclude choices, generate power set, target sum subsets | 3 |
 
 ---
 
 ## 7. Linked List
-> *Linear data structure with non-contiguous node memory allocation.* (29 problems)
+Linear data structure with non-contiguous node memory allocation. (29 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Basic Operations** | Insertion, deletion at head/tail/Nth node, traversal | 6 |
-| **Fast & Slow Pointers** | Cycle detection (Floyd's algorithm), middle node, cycle entry | 4 |
-| **Reversal Pattern** | Reverse full list, reverse sublist between $[m, n]$, reverse in $K$-groups | 7 |
-| **Merge / Sort** | Merge two sorted lists, merge $K$ sorted lists, sort list | 7 |
-| **LinkedList with Stack/Map** | Intersection of lists, copy list with random pointer, reverse order arithmetic | 5 |
+| Basic Operations | Insertion, deletion at head/tail/Nth node, traversal | 6 |
+| Fast & Slow Pointers | Cycle detection (Floyd's algorithm), middle node, cycle entry | 4 |
+| Reversal Pattern | Reverse full list, reverse sublist between [m, n], reverse in K-groups | 7 |
+| Merge / Sort | Merge two sorted lists, merge K sorted lists, sort list | 7 |
+| LinkedList with Stack/Map | Intersection of lists, copy list with random pointer, reverse order arithmetic | 5 |
 
 ---
 
 ## 8. Doubly Linked List
-> *Linked list with bidirectional forward and backward traversal.* (9 problems)
+Linked list with bidirectional forward and backward traversal. (9 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Basic DLL Operations** | Insert/delete in DLL, LRU Cache / LFU Cache design | 6 |
-| **Merge / Sort / Reorder** | Multi-level DLL flattening, pair sums in sorted DLL, palindrome check | 3 |
+| Basic DLL Operations | Insert/delete in DLL, LRU Cache / LFU Cache design | 6 |
+| Merge / Sort / Reorder | Multi-level DLL flattening, pair sums in sorted DLL, palindrome check | 3 |
 
 ---
 
 ## 9. HashMap
-> *Key-value pair data structure for average $O(1)$ lookups.* (5 problems)
+Key-value pair data structure for average O(1) lookups. (5 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Frequency Map / Counting** | Top $K$ frequent, majority element, anagram groupings | 4 |
-| **Prefix-Sum with Map** | Subarray sum equals $K$, longest subarray with sum divisible by $K$ | 1 |
+| Frequency Map / Counting | Top K frequent, majority element, anagram groupings | 4 |
+| Prefix-Sum with Map | Subarray sum equals K, longest subarray with sum divisible by K | 1 |
 
 ---
 
 ## 10. Binary Tree & BST
-> *Hierarchical tree structure with root, subtrees, and binary search invariants.* (54 problems)
+Hierarchical tree structure with root, subtrees, and binary search invariants. (54 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **DFS Traversals** | Pre/In/Postorder, max depth, diameter, path sum I/II/III, max path sum | 17 |
-| **BFS / Level-Order** | Level order, zigzag, right/left view, level averages | 11 |
-| **Lowest Common Ancestor** | LCA in binary tree, distance between nodes | 3 |
-| **Serialization / Construction** | Construct from Inorder+Preorder, serialize/deserialize tree, flatten to list | 6 |
-| **BST** | Validate BST, insert/delete, $k$-th smallest, range sum BST | 17 |
+| DFS Traversals | Pre/In/Postorder, max depth, diameter, path sum I/II/III, max path sum | 17 |
+| BFS / Level-Order | Level order, zigzag, right/left view, level averages | 11 |
+| Lowest Common Ancestor | LCA in binary tree, distance between nodes | 3 |
+| Serialization / Construction | Construct from Inorder+Preorder, serialize/deserialize tree, flatten to list | 6 |
+| BST | Validate BST, insert/delete, k-th smallest, range sum BST | 17 |
 
 ---
 
 ## 11. Graph
-> *Nodes and edges modeling connectivity, networks, and dependencies.* (44 problems)
+Nodes and edges modeling connectivity, networks, and dependencies. (44 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **DFS (Connectivity)** | Number of islands, cycle detection, bipartite graph, articulation points/bridges | 12 |
-| **BFS Pattern** | Shortest path in unweighted graph, word ladder, rotten oranges | 6 |
-| **Topological Sort** | Course Schedule, task order, dependency DAGs, Kahn's algorithm | 5 |
-| **MST / Union-Find** | Kruskal's, Prim's, Redundant Connection, Disjoint Set Union | 8 |
-| **Dijkstra (Weighted)** | Shortest path with non-negative edge weights, min effort path | 7 |
-| **Bellman-Ford** | Negative weight edges, negative cycle detection | 3 |
-| **Floyd-Warshall** | All-pairs shortest paths, transitive closure | 3 |
+| DFS (Connectivity) | Number of islands, cycle detection, bipartite graph, articulation points/bridges | 12 |
+| BFS Pattern | Shortest path in unweighted graph, word ladder, rotten oranges | 6 |
+| Topological Sort | Course Schedule, task order, dependency DAGs, Kahn's algorithm | 5 |
+| MST / Union-Find | Kruskal's, Prim's, Redundant Connection, Disjoint Set Union | 8 |
+| Dijkstra (Weighted) | Shortest path with non-negative edge weights, min effort path | 7 |
+| Bellman-Ford | Negative weight edges, negative cycle detection | 3 |
+| Floyd-Warshall | All-pairs shortest paths, transitive closure | 3 |
 
 ---
 
 ## 12. Heap / Priority Queue
-> *Efficient retrieval of extreme elements (min/max).* (15 problems)
+Retrieval of extreme elements (min/max). (15 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Implementation of Heap** | Min/Max Heap from scratch, heapify, Priority Queue design | 3 |
-| **Top-K Elements** | $K$-th largest element, find median from data stream | 5 |
-| **Merge K Sorted** | Merge $K$ sorted lists, smallest range covering elements from $K$ lists | 3 |
-| **Huffman / Minimum Cost** | Connect ropes with minimum cost, reduce array size | 4 |
+| Implementation of Heap | Min/Max Heap from scratch, heapify, Priority Queue design | 3 |
+| Top-K Elements | K-th largest element, find median from data stream | 5 |
+| Merge K Sorted | Merge K sorted lists, smallest range covering elements from K lists | 3 |
+| Huffman / Minimum Cost | Connect ropes with minimum cost, reduce array size | 4 |
 
 ---
 
 ## 13. Backtracking
-> *Incremental recursive exploration with state pruning.* (24 problems)
+Incremental recursive exploration with state pruning. (24 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Choice-Based Backtracking** | Permutations, combinations, subsets II | 9 |
-| **Constraint-Based Backtracking** | N-Queens, Sudoku solver, generate parentheses | 6 |
-| **Grid / Path Backtracking** | Word search in grid, unique paths III, rat in a maze | 5 |
-| **Decision Tree / Sequences** | Letter combinations of phone number, expression add operators | 4 |
+| Choice-Based Backtracking | Permutations, combinations, subsets II | 9 |
+| Constraint-Based Backtracking | N-Queens, Sudoku solver, generate parentheses | 6 |
+| Grid / Path Backtracking | Word search in grid, unique paths III, rat in a maze | 5 |
+| Decision Tree / Sequences | Letter combinations of phone number, expression add operators | 4 |
 
 ---
 
 ## 14. Greedy
-> *Making locally optimal choices to achieve globally optimal solutions.* (18 problems)
+Locally optimal choices aiming for a globally optimal solution. (18 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Intervals & Reach** | Non-overlapping intervals, merge intervals, jump game I & II | 10 |
-| **Sorting / Local Choice** | Gas station, candy distribution, fractional knapsack | 8 |
+| Intervals & Reach | Non-overlapping intervals, merge intervals, jump game I & II | 10 |
+| Sorting / Local Choice | Gas station, candy distribution, fractional knapsack | 8 |
 
 ---
 
 ## 15. Dynamic Programming
-> *Overlapping subproblems and optimal substructure.* (44 problems)
+Optimization method via overlapping subproblems and optimal substructure. (44 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **1D / Linear DP** | Climbing stairs, frog jump, house robber | 3 |
-| **2D / Grid DP** | Unique paths, minimum path sum, maximal square | 8 |
-| **DP on Strings** | Longest Common Subsequence (LCS), Edit Distance, Palindromic Substrings | 10 |
-| **DP on Intervals / Partition** | Matrix chain multiplication, burst balloons, palindrome partitioning | 6 |
-| **DP on Trees / DAGs** | Binary tree max path sum, house robber III, DAG longest path | 3 |
-| **Knapsack / Subset Sum** | 0/1 Knapsack, Coin Change (Unbounded), Target Sum, Partition Equal Subset | 8 |
-| **DP on Stocks** | Best time to buy & sell stock I, II, III, IV, with cooldown, with fee | 6 |
+| 1D / Linear DP | Climbing stairs, frog jump, house robber | 3 |
+| 2D / Grid DP | Unique paths, minimum path sum, maximal square | 8 |
+| DP on Strings | Longest Common Subsequence (LCS), Edit Distance, Palindromic Substrings | 10 |
+| DP on Intervals / Partition | Matrix chain multiplication, burst balloons, palindrome partitioning | 6 |
+| DP on Trees / DAGs | Binary tree max path sum, house robber III, DAG longest path | 3 |
+| Knapsack / Subset Sum | 0/1 Knapsack, Coin Change (Unbounded), Target Sum, Partition Equal Subset | 8 |
+| DP on Stocks | Best time to buy & sell stock I, II, III, IV, with cooldown, with fee | 6 |
 
 ---
 
 ## 16. Trie
-> *Prefix tree for efficient string dictionary search and prefix queries.* (11 problems)
+Prefix tree for efficient string dictionary search and prefix queries. (11 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Basic Trie Operations** | Implement Trie (Prefix Tree), Add and Search Word | 5 |
-| **Word Break / Segmentation** | Word break problem, word search II with Trie | 3 |
-| **Bitwise Trie / XOR** | Maximum XOR of two numbers in an array, maximum XOR with element | 3 |
+| Basic Trie Operations | Implement Trie (Prefix Tree), Add and Search Word | 5 |
+| Word Break / Segmentation | Word break problem, word search II with Trie | 3 |
+| Bitwise Trie / XOR | Maximum XOR of two numbers in an array, maximum XOR with element | 3 |
 
 ---
 
 ## 17. Bit Manipulation
-> *Direct binary manipulation for $O(1)$ arithmetic and set representations.* (16 problems)
+Direct binary operations for arithmetic and set representations. (16 problems)
 
-| Sub-Pattern | Key Signals / Trigger Words | Problems |
+| Sub-Pattern | Description / Trigger Signals | Problems |
 |:---|:---|:---:|
-| **Basic Bit Operations** | Single number, counting bits, power of two, reverse bits | 9 |
-| **Subsets / Bitmask** | Generate subsets via bitmask, TSP with bitmask DP | 3 |
-| **Advanced XOR** | Two single numbers, XOR queries in subarray | 4 |
-
----
-
-## 🚀 How to Use This Repository
-
-### 1. Conceptual Preparation
-- Open the respective topic and pattern folder (e.g., `01-array/two-pointer/`).
-- Review the pattern's `README.md` to understand:
-  - **Intuition**: Why the pattern exists and when it outperforms brute force.
-  - **Triggers**: Keywords and structural constraints that suggest the pattern.
-  - **Standard Boilerplate**: Common coding templates.
-
-### 2. Multi-Language & Multi-Pattern Practice
-- In `problems/<problem-name>/`, examine the problem description and break down possible solution strategies.
-- Solve and document multiple approaches (e.g., *Brute Force*, *Optimal Pattern*, *Alternative Data Structure*).
-- Implement solutions across all three target languages:
-  - **C++**: Focus on pointers, references, iterators, and STL containers (`std::vector`, `std::unordered_map`).
-  - **Java**: Focus on object-oriented idiomatic structures, collections framework, and edge cases.
-  - **Python**: Focus on clean, idiomatic algorithms, slicing, list comprehensions, and built-ins (`collections`, `heapq`).
-
-### 3. Review & Retain
-- Summarize the **time & space complexities** ($O(\dots)$) for each approach.
-- Document any tricky edge cases (e.g., integer overflows, single-element arrays, cycles, empty collections) to make future revisions quick and effective.
+| Basic Bit Operations | Single number, counting bits, power of two, reverse bits | 9 |
+| Subsets / Bitmask | Generate subsets via bitmask, TSP with bitmask DP | 3 |
+| Advanced XOR | Two single numbers, XOR queries in subarray | 4 |
