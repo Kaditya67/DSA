@@ -96,3 +96,4 @@ Before you write string solutions, verify these:
   Use `isalnum()` and `tolower()` when problem specifies alphanumeric palindrome rules.
 - [ ] **Is `s.size() < t.size()` handled early?**  
   For anagram/minimum window matching, return empty immediately when string length is less than target.
+

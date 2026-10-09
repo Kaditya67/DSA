@@ -150,3 +150,4 @@ string longestPalindrome(string s) {
 1. **Mirror / Symmetry keywords:** Palindrome, reverse string, symmetric characters.
 2. **Permutations of a palindrome:** Characters can form a palindrome if at most one character has an odd frequency count (HashMap / Bitmask trick).
 3. **Substring centers:** Any question asking to find or count all palindromic substrings (expand around center in `O(N^2)` time, `O(1)` space vs DP `O(N^2)` space).
+
