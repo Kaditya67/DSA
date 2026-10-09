@@ -108,3 +108,4 @@ return false;
 - [ ] **Are accumulators `long long` in BS on Answers?** When summing hours or weights across `10^5` items, standard `int` overflows.
 - [ ] **Did you use integer ceiling division?** Write `(a + b - 1) / b` instead of `ceil((double)a / b)` to avoid float precision bugs.
 - [ ] **Did you pick the right 2D starting corner?** Start at Top-Right `(0, n - 1)` or Bottom-Left `(m - 1, 0)`, never Top-Left `(0, 0)`.
+

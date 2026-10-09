@@ -132,3 +132,4 @@ Find the index where `target` should be inserted into a sorted array:
 3. **"Count occurrences of target in a sorted array":**  
    `count = upperBound(target) - lowerBound(target)`.
 4. **"Floor / Ceil" queries.**
+

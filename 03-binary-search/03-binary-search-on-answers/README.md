@@ -132,3 +132,4 @@ Look for these dead giveaways in the problem statement:
 2. *"Maximize the minimum distance / allocation..."*
 3. *"Minimize the maximum sum across K partitions..."*
 4. The array itself does **not** need to be sorted; only the monotonic property of the answer space matters!
+

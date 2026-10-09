@@ -111,3 +111,4 @@ Compare `nums[mid]` against `nums[high]`:
 1. **Explicit sorted order:** Problem statement explicitly states the array is sorted (or rotated sorted).
 2. **Strict time bound:** Constraints demand `O(log N)` runtime for search queries.
 3. **Lookup or pivot detection:** Finding an exact target, peak element, or pivot in an ordered collection.
+

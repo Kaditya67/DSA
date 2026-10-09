@@ -114,3 +114,4 @@ bool searchMatrixII(vector<vector<int>>& matrix, int target) {
 1. **"Matrix is row-wise and column-wise sorted":** Staircase search starting at Top-Right `(0, n - 1)` in `O(M + N)`.
 2. **"First integer of each row is greater than the last integer of the previous row":** 1D binary search mapping `mid / n` and `mid % n` in `O(log(M * N))`.
 3. **K-th Smallest Element in Sorted Matrix:** Binary search on answers over range `[matrix[0][0], matrix[m-1][n-1]]` using Staircase count in `O(N * log(max - min))`.
+
