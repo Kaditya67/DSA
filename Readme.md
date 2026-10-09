@@ -48,6 +48,9 @@ DSA/
 │   ├── 03-prefix-sum/
 │   └── 04-kadanes-algorithm/
 ├── 02-strings/
+│   ├── README.md
+│   ├── 01-two-pointer-palindrome/
+│   └── 02-sliding-window-string/
 ├── 03-binary-search/
 ├── 04-stack/
 ├── 05-queue/
