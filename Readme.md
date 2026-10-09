@@ -52,6 +52,11 @@ DSA/
 │   ├── 01-two-pointer-palindrome/
 │   └── 02-sliding-window-string/
 ├── 03-binary-search/
+│   ├── README.md
+│   ├── 01-classic-binary-search/
+│   ├── 02-lower-upper-bound/
+│   ├── 03-binary-search-on-answers/
+│   └── 04-search-in-2d-matrix/
 ├── 04-stack/
 ├── 05-queue/
 ├── 06-recursion/
